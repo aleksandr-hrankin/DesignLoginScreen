@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_title">28sp</dimen>
+    <dimen name="text_size_plain">16sp</dimen>
+
+    <dimen name="global_margin_5xl">48dp</dimen>
+    <dimen name="global_margin_4xl">44dp</dimen>
+    <dimen name="global_margin_3xl">40dp</dimen>
+    <dimen name="global_margin_xl">36dp</dimen>
+    <dimen name="global_margin_normal">32dp</dimen>
+    <dimen name="global_margin_l">28dp</dimen>
+    <dimen name="global_margin_m">24dp</dimen>
+    <dimen name="global_margin_s">20dp</dimen>
+    <dimen name="global_margin_xs">16dp</dimen>
+    <dimen name="global_margin_3xs">12dp</dimen>
+    <dimen name="global_margin_4xs">8dp</dimen>
+
+    <dimen name="primary_button_rounding">50dp</dimen>
+</resources>

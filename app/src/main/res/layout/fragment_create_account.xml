@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/global_margin_normal"
+    android:paddingEnd="@dimen/global_margin_normal"
+    tools:context=".presentation.fragment.create_account.CreateAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppPlainText.Center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_s"
+            android:paddingStart="@dimen/global_margin_normal"
+            android:paddingEnd="@dimen/global_margin_normal"
+            android:text="@string/create_account_social_network_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_m"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_create_account_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/global_margin_4xs"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_facebook" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_create_account_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_margin_4xs"
+                android:layout_marginEnd="@dimen/global_margin_4xs"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_twitter" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_create_account_whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/global_margin_4xs"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/icon_whatsapp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_normal"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/tv_login_or_text"
+                android:background="@color/main_app_text_hint" />
+
+            <TextView
+                android:id="@+id/tv_login_or_text"
+                style="@style/AppPlainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/create_account_divider_text"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/tv_login_or_text"
+                android:background="@color/main_app_text_hint" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_create_account_error_text"
+            style="@style/AppErrorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_normal"
+            android:text="@string/create_account_error_text"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            style="@style/AppPlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_normal"
+            android:text="@string/create_account_full_name_text" />
+
+        <EditText
+            android:id="@+id/et_create_account_full_name"
+            style="@style/AppEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_4xs"
+            android:hint="@string/create_account_full_name_hint_text" />
+
+        <TextView
+            style="@style/AppPlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_s"
+            android:text="@string/create_account_email_text" />
+
+        <EditText
+            android:id="@+id/et_create_account_email"
+            style="@style/AppEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_4xs"
+            android:hint="@string/create_account_email_hint_text" />
+
+        <TextView
+            style="@style/AppPlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_s"
+            android:text="@string/create_account_password_text" />
+
+        <ua.antibyte.designloginscreen.common.view.PasswordEditText
+            android:id="@+id/et_create_account_password"
+            style="@style/AppEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_4xs"
+            android:hint="@string/create_account_password_hint_text"
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_create_account_registration"
+            style="@style/AppPrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/global_margin_normal"
+            android:layout_marginBottom="@dimen/global_margin_normal"
+            android:background="@drawable/bg_primary_button"
+            android:text="@string/create_account_registration_button" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
